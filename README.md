@@ -1,4 +1,4 @@
-# gambit-quiz
+# Gambit quiz
 
 ### [Gambit research](https://www.gambitresearch.com) offers an  [interview quiz](https://www.gambitresearch.com/quiz/) to reach them about their job opportunities. Here is my solution to the latest version of the puzzle (as of 04/2018).
 
@@ -11,23 +11,23 @@ The webpage shows the following:
 and in the source code:
 
 > 		<script type="text/javascript">
-		function scramble(ascii,a,b,c) {
-			for(i=0; i<ascii.length; i++) {
-				if (i%3==0) {ascii[i]=(ascii[i]+a)%256;}
-				if (i%3==1) {ascii[i]=(ascii[i]+b)%256;}
-				if (i%3==2) {ascii[i]=(ascii[i]+c)%256;}
-			}
-			return ascii;
-		}
-		</script>
+>		function scramble(ascii,a,b,c) {
+>			for(i=0; i<ascii.length; i++) {
+>				if (i%3==0) {ascii[i]=(ascii[i]+a)%256;}
+>				if (i%3==1) {ascii[i]=(ascii[i]+b)%256;}
+>				if (i%3==2) {ascii[i]=(ascii[i]+c)%256;}
+>			}
+>			return ascii;
+>		}
+>		</script>
 		
 which tells us that the cyphering was done by applying three different character value shifts, each shift being applied cyclically when iterating by character position.
 
 Bottom line: to decipher we need to find `a`, `b` and `c` each in a `[0,255]` range.
 
 Two similar solutions here:
--`solution.cpp`: brute force approach, attemps the $256^3$ solutions and outputs the only which contains `gambit` in the deciphered message.
--`solution.py`: still a brute force approach, with a $3 \times 256$ complexity, again returns the only solution with output containing only acceptable characters.
+-`solution.cpp`: brute force approach, attemps the 256*256*256 solutions and outputs the only which contains `gambit` in the deciphered message.
+-`solution.py`: still a brute force approach, with a 256*3 complexity, again returns the only solution with output containing only acceptable characters.
 
 Both return the same answer:
 
