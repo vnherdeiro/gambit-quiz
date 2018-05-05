@@ -25,8 +25,8 @@ which tells us that the cyphering was done by applying three different character
 Bottom line: to decipher we need to find `a`, `b` and `c` each in a `[0,255]` range.
 
 Two similar solutions here:
--`solution.cpp`: brute force approach, attemps the 256 * 256 * 256 solutions and outputs the only which contains `gambit` in the deciphered message.
--`solution.py`: still a brute force approach, with a 256 * 3 complexity, again returns the only solution with output containing only acceptable characters.
+* `solution.cpp` is a brute force approach, attemps the 256 * 256 * 256 solutions and outputs the only which contains `gambit` in the deciphered message.
+* `solution.py` is still a brute force approach, with a 256 * 3 complexity, again returns the only solution with output containing only acceptable characters.
 
 Both return the same answer:
 
