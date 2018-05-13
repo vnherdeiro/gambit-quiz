@@ -1,6 +1,6 @@
 # Gambit quiz
 
-### [Gambit research](https://www.gambitresearch.com) offers an  [interview quiz](https://www.gambitresearch.com/quiz/) to reach them about their job opportunities. Here is my solution to the ~~latest version~~ of the puzzle (as of 04/2018).
+### [Gambit research](https://www.gambitresearch.com) offers an  [interview quiz](https://www.gambitresearch.com/quiz/) to reach them about their job opportunities. Here is my solution to the ~~latest version of the~~ puzzle (as of 04/2018).
 
 The webpage shows the following:
 
@@ -40,3 +40,7 @@ and the deciphered message:
 ***
 
 **May 18 update**: It looks like the ciphered message has been updated but the solving algorithm is the same. For the sake of correctedness, I have updated the Python solution into `solution_may18.py` where the ciphered message is scraped straight from the quiz webpage.
+
+The new deciphered message is:
+
+	Hello, Congratulations for solving the Gambit challenge. Please send your solution and CV to icancode@gambitresearch.com quoting reference: 8d300e0100.
